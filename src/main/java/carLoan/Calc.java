@@ -1,88 +1,88 @@
 package carLoan;
 /**
- * Абстрактный класс
- * @author Уразбахтин Тимур
+ * РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ
+ * @author РЈСЂР°Р·Р±Р°С…С‚РёРЅ РўРёРјСѓСЂ
  */
 public abstract class Calc {
-	/** Поле cтоимость автомобиля */
+	/** РџРѕР»Рµ cС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ */
 	protected double carPrice;
 	
-	/** Поле первоначальный взнос */
+	/** РџРѕР»Рµ РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅС‹Р№ РІР·РЅРѕСЃ */
 	protected double initPay;
 	
-	/** Поле процентная ставка */
+	/** РџРѕР»Рµ РїСЂРѕС†РµРЅС‚РЅР°СЏ СЃС‚Р°РІРєР° */
 	protected double annualInterestRate;
 	
-	/** Поле срок кредита в месяцах */
+	/** РџРѕР»Рµ СЃСЂРѕРє РєСЂРµРґРёС‚Р° РІ РјРµСЃСЏС†Р°С… */
 	protected int numberOfMonth;
 	
 	/**
-	 * Возвращает cтоимость автомобиля
-	 * @return cтоимость автомобиля
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ cС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
+	 * @return cС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
 	 */
 	public double getcarPrice() {
 		return carPrice;	
 	}
 	
 	/**
-	 * Присваивает стоимость автомобиля
-	 * @param carPrice стоимость автомобиля
+	 * РџСЂРёСЃРІР°РёРІР°РµС‚ СЃС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
+	 * @param carPrice СЃС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
 	 */
 	public void setcarPrice(double carPrice) {
 		this.carPrice = carPrice;
 	}
 	
 	/**
-	 * Возвращает первоначальный взнос
-	 * @return первоначальный взнос
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅС‹Р№ РІР·РЅРѕСЃ
+	 * @return РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅС‹Р№ РІР·РЅРѕСЃ
 	 */
 	public double getInitPay() {
 		return initPay;	
 	}
 	
 	/**
-	 * Присваивает первоначальный взнос
-	 * @param initPay первоначальный взнос
+	 * РџСЂРёСЃРІР°РёРІР°РµС‚ РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅС‹Р№ РІР·РЅРѕСЃ
+	 * @param initPay РїРµСЂРІРѕРЅР°С‡Р°Р»СЊРЅС‹Р№ РІР·РЅРѕСЃ
 	 */
 	public void setInitPay(double initPay) {
 		this.initPay = initPay;
 	}
 	
 	/**
-	 * Возвращает процентную ставку
-	 * @return процентную ставку
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ РїСЂРѕС†РµРЅС‚РЅСѓСЋ СЃС‚Р°РІРєСѓ
+	 * @return РїСЂРѕС†РµРЅС‚РЅСѓСЋ СЃС‚Р°РІРєСѓ
 	 */
 	public double getAnnualInterestRate() {
 		return annualInterestRate;	
 	}
 	
 	/**
-	 * Присваивает процентную ставку
-	 * @param annualInterestRate процентную ставку
+	 * РџСЂРёСЃРІР°РёРІР°РµС‚ РїСЂРѕС†РµРЅС‚РЅСѓСЋ СЃС‚Р°РІРєСѓ
+	 * @param annualInterestRate РїСЂРѕС†РµРЅС‚РЅСѓСЋ СЃС‚Р°РІРєСѓ
 	 */
 	public void setAnnualInterestRate(double annualInterestRate) {
 		this.annualInterestRate = annualInterestRate;
 	}
 	
 	/**
-	 * Возвращает срок кредита в месяцах
-	 * @return срок кредита в месяцах
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃСЂРѕРє РєСЂРµРґРёС‚Р° РІ РјРµСЃСЏС†Р°С…
+	 * @return СЃСЂРѕРє РєСЂРµРґРёС‚Р° РІ РјРµСЃСЏС†Р°С…
 	 */
 	public double getNumberOfMonth() {
 		return numberOfMonth;	
 	}
 	
 	/**
-	 * Присваивает срок кредита в месяцах
-	 * @param numberOfMonth срок кредита в месяцах
+	 * РџСЂРёСЃРІР°РёРІР°РµС‚ СЃСЂРѕРє РєСЂРµРґРёС‚Р° РІ РјРµСЃСЏС†Р°С…
+	 * @param numberOfMonth СЃСЂРѕРє РєСЂРµРґРёС‚Р° РІ РјРµСЃСЏС†Р°С…
 	 */
 	public void setNumberOfMonth(int numberOfMonth) {
 		this.numberOfMonth = numberOfMonth;
 	}
 	
 	/**
-	 * Возвращает стоимость автомобиля
-	 * @return стоимость автомобиля
+	 * Р’РѕР·РІСЂР°С‰Р°РµС‚ СЃС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
+	 * @return СЃС‚РѕРёРјРѕСЃС‚СЊ Р°РІС‚РѕРјРѕР±РёР»СЏ
 	 */
 	public double getCreditAmount() {
 		double creditAmount = carPrice - initPay;
